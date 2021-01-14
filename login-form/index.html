@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+    <h2>Tripods login</h2>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.phb" method="POST">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
+                <img src="./tripods.png" alt="avatar" class="avatar">
+
+            </div>
+            <div class="container">
+                <label for="uname"><b>username</b></label>
+                <input type="text" placeholder="enter username" name="uname" required>
+                <label for="psw"><b>password</b></label>
+                <input type="password" placeholder="enter password" name="psw" required>
+                <button type="submit">login</button>
+                <label>
+               <input type="checkbox" checked="checked" name="remember"> remember me 
+           </label>
+            </div>
+            <div class="container" style="background-color: #f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">cancel</button>
+                <span class="psw">forgot <a href="#">password?</a></span>
+
+
+
+            </div>
+        </form>
+    </div>
+    <script src="./js/login.js">
+    </script>
+</body>
+
+</html>
